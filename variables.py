@@ -3,7 +3,8 @@ surname = "Nalesso"
 
 site = "Vicenza"
 type(site)
-#Il type mi dice che formato è la variabile (stringa, intero, float, ecc)
+# type tells me the variable format (string, int, float ecc)
+
 routers = 10
 type(routers)
 switches = 6
@@ -19,6 +20,6 @@ full_name = name + surname
 print(full_name)
 
 # Format string
-full_name_final = f"My name is {name} and the surname is {surname}. The correct name is: {name} {surname}" 
+full_name_final = f"My name is {name} and the surname is {surname}. The correct name is: {name} {surname}"
 print(full_name_final)
 print("Each engineers have to manage ", workflow, " devices")

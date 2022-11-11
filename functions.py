@@ -2,10 +2,10 @@ from ast import IfExp
 from distutils.errors import DistutilsClassError
 
 
-def vlan_exist(vlan):      #vlan è una variabile temporanea, il mio input
+def vlan_exist(vlan):      #"vlan" is a temp variable
     vlans_on_switch = [10, 20, 30, 40, 50, 60]
     return vlan in vlans_on_switch
-print(vlan_exist(10)) #dentro la parentesi metto un input io
+print(vlan_exist(10)) #put the value inside the ()
 
 # Result = "True"
 
@@ -14,7 +14,8 @@ def vlan_info(id, name):
 
 print(vlan_info("10","MGMT"))
 # The VLAN ID is 10 and the VLAN name is MGMT
-# Il trick è quello di ottenere valori dinamici e richiamare le funzione, che non cambia
+# We need to obtain dynamic values and call the function, that doesn't change
+
 
 
 def intf(interface, speed = "1000", duplex = "full"):
@@ -22,7 +23,7 @@ def intf(interface, speed = "1000", duplex = "full"):
     print(f"The speed of the interface is {speed}")
     print(f"The duplex of the interface is {duplex}")
 print(intf("Gi0/1", "2000", "half"))
-# Output 
+# Output
 # The interface of the router is Gi0/1
 # The speed of the interface is 2000
 # The duplex of the interface is half

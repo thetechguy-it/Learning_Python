@@ -8,7 +8,7 @@ print(SSH_Status)
 # Result : True
 print(SSH.find_prompt())
 # Result: SW1_Automation>
-# Essendo che il "line con0" sullo switch è settato con Priv 0, entro in ">" mode, per elevarmi ad exec mode devo dare .enable()
+# Our user has Priv0 so we are facing the ">" and not the "#", we need to elevate using the enable command --> .enable() in python
 SSH.enable()
 print(SSH.find_prompt())
 # Result: SW1_Automation#

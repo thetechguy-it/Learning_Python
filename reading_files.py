@@ -5,7 +5,7 @@ print(os.listdir())
 # Se linux
 # os.system("cat test.txt")
 
-config = open("test.txt", "r") # crea una variabile temporanea (<class '_io.TextIOWrapper'>), è da convertire subito in una variabile nostra. Ogni volta che richiamo una variabile temporanea, al primo colpo scompare e devo richiamare il file
+config = open("test.txt", "r") #  it creates a temp variable  (<class '_io.TextIOWrapper'>), i nee to convert it as a normal variable. each time i call a temp variable, it disappear at the first use.
 print(config.read())
 print(type(config))
 config = open("test.txt", "r")
@@ -13,7 +13,7 @@ python_learn = config.read()
 print(python_learn)
 
 
-#Creare un file, in scrittura, e riportare dentro il contenuto dei dictionary all'interno della list
+# crate a writing file e write inside it the dictionary values inside the list 
 
 vlans1 = [{"id" : "10","name" : "DATA"}, {"id" : "20","name" : "VOICE"}, {"id" : "30","name" : "MGMT"}]
 print(vlans1)
